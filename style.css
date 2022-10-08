@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+*{border: 1px solid rgba(128, 128, 128, 0.26);}
 body {
     font-family: 'roboto', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /*----- HEADER -----*/
@@ -12,17 +15,18 @@ body {
     background-color: #1F2937;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    gap: 16px;
 }
 .logo {
     font-size: 24px;
     font-weight: bold;
-    margin: 0 64px;
     flex-shrink: 0;
 }
 
 ul {
+    padding: 0;
     list-style: none;
     font-size: 18px;
 }
@@ -35,5 +39,135 @@ a {
     display: flex;
     flex-shrink: 0;
     gap: 16px;
-    margin: 0 64px;
+}
+/*----- CONTENT -----*/
+
+/*----- SECTION 1 -----*/
+.sec1 {
+    height: 540px;
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 32px;
+    color: whitesmoke;
+}
+
+.box1 {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.sec1 h3 {
+    font-size: 48px;
+    margin: 0;
+}
+.sec1 p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 00;
+}
+
+button {
+    padding: 8px 16px;
+    margin-top: auto;
+    justify-content: flex-start;
+    width: 100px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    color: whitesmoke;
+    background-color: #3882F6;
+}
+
+.box2 img {
+    width: 400px;
+    height: 300px;
+    border: 4px solid whitesmoke;
+    border-radius: 64px;
+}
+
+/*----- SECTION 2 -----*/
+.sec2 {
+    height: 540px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+/*----- SECTION 3 -----*/
+.sec3 {
+    height: 540px;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3 div {
+    width: 1000px;
+}
+.sec3 span {
+    display: block;
+    font-weight: bold;
+    text-align: end;
+}
+
+/*----- SECTION 4 -----*/
+.sec4 {
+    height: 420px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue-box {
+    background-color: #3882F6;
+    margin: 16px;
+    padding: 50px;
+    width: 1200px;
+    color: whitesmoke;
+    border-radius: 15px;
+    gap: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#signup-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+#signup-text {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.blue-box button {
+    border: 2px solid whitesmoke;
+    width: 150px;
+    height: 75px;
+    margin-top: 0;
+}
+
+/*----- FOOTER -----*/
+.footer {
+    height: 64px;
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
