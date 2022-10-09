@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-*{border: 1px solid rgba(128, 128, 128, 0.26);}
 body {
     font-family: 'roboto', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 /*----- HEADER -----*/
@@ -44,9 +42,11 @@ a {
 
 /*----- SECTION 1 -----*/
 .sec1 {
-    height: 540px;
+    min-height: 540px;
     background-color: #1F2937;
     display: flex;
+    flex: 1 0 auto;
+    padding: 16px;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -56,15 +56,17 @@ a {
 
 .box1 {
     display: flex;
-    width: 400px;
-    height: 300px;
+    max-width: 650px;
+    max-height: 350px;
+    gap: 8px;
     flex-wrap: wrap;
+    flex: 1 1 auto;
     flex-direction: column;
-    justify-content: flex-start;
-    
+    justify-content: flex-start;    
 }
-.sec1 h3 {
+.box1 h3 {
     font-size: 48px;
+    font-weight: 900;
     margin: 0;
 }
 .sec1 p{
@@ -85,6 +87,9 @@ button {
     background-color: #3882F6;
 }
 
+.box2 {
+    display: flex;
+}
 .box2 img {
     width: 400px;
     height: 300px;
@@ -94,10 +99,50 @@ button {
 
 /*----- SECTION 2 -----*/
 .sec2 {
-    height: 540px;
+    min-height: 540px;
     background-color: #ffffff;
+    padding: 16px;
     display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    gap: 64px;
     align-items: center;
+    justify-content: center;
+}
+.sec2text {
+    display: flex;
+    font-weight: bolder;
+    color: #1F2937;
+    font-size: 42px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.sec2img {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.small {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    flex-wrap: wrap;
+}
+.imgtxt{
+    text-align: center;
+    font-size: 18px;
+}
+.sec2img img {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #3882F6;
+    border-radius: 32px;
 }
 
 /*----- SECTION 3 -----*/
@@ -113,7 +158,6 @@ button {
     justify-content: center;
     align-items: center;
 }
-
 .sec3 div {
     width: 1000px;
 }
@@ -121,6 +165,11 @@ button {
     display: block;
     font-weight: bold;
     text-align: end;
+}
+
+.sec3 div,
+.sec3 span {
+    margin: 16px;
 }
 
 /*----- SECTION 4 -----*/
